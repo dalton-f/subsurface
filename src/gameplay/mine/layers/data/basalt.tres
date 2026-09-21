@@ -1,8 +1,20 @@
 [gd_resource type="Resource" script_class="LayerData" format=3 uid="uid://cjlirisevpwpw"]
 
 [ext_resource type="Script" uid="uid://beo0kbubt6rpg" path="res://src/gameplay/mine/ores/ore_data.gd" id="1_0vem8"]
+[ext_resource type="Resource" uid="uid://djpjws5dev3ni" path="res://src/gameplay/mine/ores/data/basalt.tres" id="2_2yemj"]
 [ext_resource type="Script" uid="uid://b8bltevqafkg8" path="res://src/gameplay/mine/layers/layer_data.gd" id="2_bhf2x"]
+[ext_resource type="Resource" uid="uid://cd7se128oedkg" path="res://src/gameplay/mine/ores/data/diamond.tres" id="3_ry6aj"]
+[ext_resource type="Resource" uid="uid://1wng48vi5ym0" path="res://src/gameplay/mine/ores/data/emerald.tres" id="4_a1340"]
+[ext_resource type="Resource" uid="uid://bcd0hy820uqhw" path="res://src/gameplay/mine/ores/data/hepatizon.tres" id="5_b10ja"]
+[ext_resource type="Resource" uid="uid://eiym2bq7fmxm" path="res://src/gameplay/mine/ores/data/limonite.tres" id="6_2hlop"]
+[ext_resource type="Resource" uid="uid://35da6688jc7u" path="res://src/gameplay/mine/ores/data/magnetite.tres" id="7_jaj6b"]
+[ext_resource type="Resource" uid="uid://b22fuwoxyw04a" path="res://src/gameplay/mine/ores/data/pyrite.tres" id="8_6olxo"]
+[ext_resource type="Resource" uid="uid://bmjskwqty4efd" path="res://src/gameplay/mine/ores/data/seaborgium.tres" id="9_dqnqs"]
 
 [resource]
 script = ExtResource("2_bhf2x")
+layer_name = &"Basalt"
+min_depth = 50
+max_depth = 100
+ores = Array[ExtResource("1_0vem8")]([ExtResource("2_2yemj"), ExtResource("3_ry6aj"), ExtResource("4_a1340"), ExtResource("5_b10ja"), ExtResource("6_2hlop"), ExtResource("7_jaj6b"), ExtResource("8_6olxo"), ExtResource("9_dqnqs")])
 metadata/_custom_type_script = "uid://b8bltevqafkg8"
