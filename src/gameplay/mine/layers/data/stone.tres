@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="LayerData" format=3 uid="uid://cncfo40x6s3s6"]
+
+[ext_resource type="Script" uid="uid://beo0kbubt6rpg" path="res://src/gameplay/mine/ores/ore_data.gd" id="1_kw5ja"]
+[ext_resource type="Script" uid="uid://b8bltevqafkg8" path="res://src/gameplay/mine/layers/layer_data.gd" id="1_ogk7i"]
+[ext_resource type="Resource" uid="uid://dron4kw8may0e" path="res://src/gameplay/mine/ores/data/azurite.tres" id="2_i7xiu"]
+[ext_resource type="Resource" uid="uid://cox6y1njra3yd" path="res://src/gameplay/mine/ores/data/cinnabar.tres" id="3_sil3d"]
+[ext_resource type="Resource" uid="uid://bfnf2346ne1ep" path="res://src/gameplay/mine/ores/data/copper.tres" id="4_qat74"]
+[ext_resource type="Resource" uid="uid://i5pe5f7aua3u" path="res://src/gameplay/mine/ores/data/gold.tres" id="5_fwfg1"]
+[ext_resource type="Resource" uid="uid://56aadj5mgeaj" path="res://src/gameplay/mine/ores/data/malachite.tres" id="6_w1awn"]
+[ext_resource type="Resource" uid="uid://di7pdu2d038qn" path="res://src/gameplay/mine/ores/data/orphiment.tres" id="7_n6s27"]
+[ext_resource type="Resource" uid="uid://40uva18hdbnn" path="res://src/gameplay/mine/ores/data/silver.tres" id="8_cecjw"]
+[ext_resource type="Resource" uid="uid://bkkammorr08ep" path="res://src/gameplay/mine/ores/data/stone.tres" id="9_50v24"]
+
+[resource]
+script = ExtResource("1_ogk7i")
+layer_name = &"Stone"
+max_depth = 50
+ores = Array[ExtResource("1_kw5ja")]([ExtResource("2_i7xiu"), ExtResource("3_sil3d"), ExtResource("4_qat74"), ExtResource("5_fwfg1"), ExtResource("6_w1awn"), ExtResource("7_n6s27"), ExtResource("8_cecjw"), ExtResource("9_50v24")])
+metadata/_custom_type_script = "uid://b8bltevqafkg8"

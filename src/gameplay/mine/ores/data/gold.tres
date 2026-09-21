@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="OreData" format=3 uid="uid://i5pe5f7aua3u"]
+
+[ext_resource type="PackedScene" uid="uid://b6fy4lgpqnh40" path="res://src/gameplay/mine/ores/scenes/gold.tscn" id="1_bl81j"]
+[ext_resource type="Script" uid="uid://beo0kbubt6rpg" path="res://src/gameplay/mine/ores/ore_data.gd" id="1_rt0qr"]
+
+[resource]
+script = ExtResource("1_rt0qr")
+id = &"Gold"
+scene = ExtResource("1_bl81j")
+rarity = 100
+metadata/_custom_type_script = "uid://beo0kbubt6rpg"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="OreData" format=3 uid="uid://di7pdu2d038qn"]
+
+[ext_resource type="Script" uid="uid://beo0kbubt6rpg" path="res://src/gameplay/mine/ores/ore_data.gd" id="1_12j1m"]
+[ext_resource type="PackedScene" uid="uid://bdfdq2t2ojvn7" path="res://src/gameplay/mine/ores/scenes/orphiment.tscn" id="1_oqcs3"]
+
+[resource]
+script = ExtResource("1_12j1m")
+id = &"Orphiment"
+scene = ExtResource("1_oqcs3")
+rarity = 50
+metadata/_custom_type_script = "uid://beo0kbubt6rpg"
