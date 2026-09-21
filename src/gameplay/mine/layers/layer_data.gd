@@ -1,7 +1,7 @@
 class_name LayerData
 extends Resource
 
-@export var layer_name: String
+@export var layer_name: StringName
 @export var min_depth: int
 @export var max_depth: int
 @export var ores: Array[OreData]
