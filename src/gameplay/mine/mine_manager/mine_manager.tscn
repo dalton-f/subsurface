@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://8ddpxgrbr06r"]
+
+[ext_resource type="Script" uid="uid://8uwayfqo7a8e" path="res://src/gameplay/mine/mine_manager/mine_manager.gd" id="1_d8g7s"]
+
+[node name="MineManager" type="Node3D" unique_id=1286615428]
+script = ExtResource("1_d8g7s")
