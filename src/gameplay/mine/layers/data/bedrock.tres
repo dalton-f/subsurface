@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="LayerData" format=3 uid="uid://ke6c6onkqbvt"]
+
+[ext_resource type="Script" uid="uid://beo0kbubt6rpg" path="res://src/gameplay/mine/ores/ore_data.gd" id="1_u07qy"]
+[ext_resource type="Resource" uid="uid://b3tihwgy2ssdh" path="res://src/gameplay/mine/ores/data/bedrock.tres" id="2_f1iuj"]
+[ext_resource type="Script" uid="uid://b8bltevqafkg8" path="res://src/gameplay/mine/layers/layer_data.gd" id="2_g14u7"]
+
+[resource]
+script = ExtResource("2_g14u7")
+layer_name = &"Bedrock"
+min_depth = 100
+max_depth = 101
+ores = Array[ExtResource("1_u07qy")]([ExtResource("2_f1iuj")])
+metadata/_custom_type_script = "uid://b8bltevqafkg8"
