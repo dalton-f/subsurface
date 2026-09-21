@@ -1,3 +1,50 @@
 [gd_scene format=3 uid="uid://cwtoihhqjvq83"]
 
+[ext_resource type="PackedScene" uid="uid://8ddpxgrbr06r" path="res://src/gameplay/mine/mine_manager/mine_manager.tscn" id="1_ru6p5"]
+[ext_resource type="Script" uid="uid://b8bltevqafkg8" path="res://src/gameplay/mine/layers/layer_data.gd" id="2_8riay"]
+[ext_resource type="Resource" uid="uid://cncfo40x6s3s6" path="res://src/gameplay/mine/layers/data/stone.tres" id="3_tcv2j"]
+[ext_resource type="Resource" uid="uid://cjlirisevpwpw" path="res://src/gameplay/mine/layers/data/basalt.tres" id="4_xyjx8"]
+[ext_resource type="Resource" uid="uid://ke6c6onkqbvt" path="res://src/gameplay/mine/layers/data/bedrock.tres" id="5_x3gju"]
+[ext_resource type="Resource" uid="uid://bkkammorr08ep" path="res://src/gameplay/mine/ores/data/stone.tres" id="6_ci6as"]
+[ext_resource type="MeshLibrary" uid="uid://b0eoyo74hhdaq" path="res://assets/mesh_libs/space_base_bits/space_base_bits.meshlib" id="7_tcv2j"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_8riay"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_tcv2j"]
+sky_material = SubResource("ProceduralSkyMaterial_8riay")
+
+[sub_resource type="Environment" id="Environment_xyjx8"]
+background_mode = 2
+sky = SubResource("Sky_tcv2j")
+glow_enabled = true
+
 [node name="Main" type="Node3D" unique_id=1510361917]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1411357723]
+environment = SubResource("Environment_xyjx8")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1253880252]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Environment" type="Node3D" parent="." unique_id=1041676246]
+
+[node name="MineManager" parent="Environment" unique_id=1286615428 instance=ExtResource("1_ru6p5")]
+width = 21
+depth = 21
+layers = Array[ExtResource("2_8riay")]([ExtResource("3_tcv2j"), ExtResource("4_xyjx8"), ExtResource("5_x3gju")])
+fallback_block = ExtResource("6_ci6as")
+
+[node name="SpaceBits" type="Node3D" parent="Environment" unique_id=98997446]
+
+[node name="GridMap" type="GridMap" parent="Environment/SpaceBits" unique_id=911528031]
+mesh_library = ExtResource("7_tcv2j")
+cell_size = Vector3(2, 1, 2)
+cell_center_x = false
+cell_center_z = false
+data = {
+"cells": PackedInt32Array(65546, 8, 55, 65546, 9, 55, 65546, 7, 55, 65546, 6, 55, 65546, 5, 55, 65546, 4, 55, 65546, 3, 55, 65546, 2, 55, 65546, 1, 55, 65546, 0, 55, 65546, 65535, 55, 65546, 65534, 55, 65546, 65533, 55, 65546, 65532, 55, 65546, 65531, 55, 65546, 65530, 55, 65546, 65529, 55, 65546, 65528, 55, 65546, 65527, 55, 65545, 10, 1441847, 65544, 10, 1441847, 65543, 10, 1441847, 65542, 10, 1441847, 65541, 10, 1441847, 65540, 10, 1441847, 65539, 10, 1441847, 65538, 10, 1441847, 65537, 10, 1441847, 65536, 10, 1441847, 131071, 10, 1441847, 131070, 10, 1441847, 131069, 10, 1441847, 131068, 10, 1441847, 131067, 10, 1441847, 131066, 10, 1441847, 131065, 10, 1441847, 131064, 10, 1441847, 131063, 10, 1441847, 131062, 9, 655415, 131062, 8, 655415, 131062, 7, 655415, 131062, 6, 655415, 131062, 5, 655415, 131062, 4, 655415, 131062, 3, 655415, 131062, 2, 655415, 131062, 1, 655415, 131062, 0, 655415, 131062, 65535, 655415, 131062, 65534, 655415, 131062, 65533, 655415, 131062, 65532, 655415, 131062, 65531, 655415, 131062, 65530, 655415, 131062, 65529, 655415, 131062, 65528, 655415, 131062, 10, 655416, 65546, 10, 1441848, 65546, 65526, 56, 65545, 65526, 1048631, 65544, 65526, 1048631, 65543, 65526, 1048631, 65542, 65526, 1048631, 65541, 65526, 1048631, 65540, 65526, 1048631, 65539, 65526, 1048631, 65538, 65526, 1048631, 65537, 65526, 1048631, 65536, 65526, 1048631, 131071, 65526, 1048631, 131070, 65526, 1048631, 131069, 65526, 1048631, 131068, 65526, 1048631, 131067, 65526, 1048631, 131066, 65526, 1048631, 131065, 65526, 1048631, 131064, 65526, 1048631, 131063, 65526, 1048631, 131062, 65527, 655415, 131062, 65526, 1048632)
+}
+metadata/_editor_floor_ = Vector3(0, 0, 0)
