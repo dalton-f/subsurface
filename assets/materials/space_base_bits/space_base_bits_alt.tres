@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://d1q8bcbsdbvse"]
+
+[ext_resource type="Texture2D" uid="uid://5vstkd2m10pr" path="res://assets/textures/space_base_bits/spacebits_texture_alt.png" id="1_jabkb"]
+
+[resource]
+resource_name = "spacebits_texture"
+albedo_texture = ExtResource("1_jabkb")
+roughness = 0.6
+metadata/_gltf_primary_texture_coord = 0
