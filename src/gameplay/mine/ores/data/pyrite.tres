@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="OreData" format=3 uid="uid://b22fuwoxyw04a"]
+
+[ext_resource type="Script" uid="uid://beo0kbubt6rpg" path="res://src/gameplay/mine/ores/ore_data.gd" id="1_3lhdl"]
+[ext_resource type="PackedScene" uid="uid://doo4iq2n5wbrp" path="res://src/gameplay/mine/ores/scenes/pyrite.tscn" id="1_w7xgn"]
+
+[resource]
+script = ExtResource("1_3lhdl")
+id = &"Pyrite"
+scene = ExtResource("1_w7xgn")
+rarity = 20
+metadata/_custom_type_script = "uid://beo0kbubt6rpg"

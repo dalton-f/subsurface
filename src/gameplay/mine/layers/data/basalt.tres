@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="LayerData" format=3 uid="uid://cjlirisevpwpw"]
+
+[ext_resource type="Script" uid="uid://beo0kbubt6rpg" path="res://src/gameplay/mine/ores/ore_data.gd" id="1_0vem8"]
+[ext_resource type="Script" uid="uid://b8bltevqafkg8" path="res://src/gameplay/mine/layers/layer_data.gd" id="2_bhf2x"]
+
+[resource]
+script = ExtResource("2_bhf2x")
+metadata/_custom_type_script = "uid://b8bltevqafkg8"
