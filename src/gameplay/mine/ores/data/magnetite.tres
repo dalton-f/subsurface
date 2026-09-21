@@ -7,5 +7,5 @@
 script = ExtResource("1_budso")
 id = &"Magnetite"
 scene = ExtResource("1_8ehr3")
-rarity = 10
+rarity = 60
 metadata/_custom_type_script = "uid://beo0kbubt6rpg"

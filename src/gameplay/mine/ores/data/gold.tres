@@ -7,5 +7,5 @@
 script = ExtResource("1_rt0qr")
 id = &"Gold"
 scene = ExtResource("1_bl81j")
-rarity = 100
+rarity = 300
 metadata/_custom_type_script = "uid://beo0kbubt6rpg"
