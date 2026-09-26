@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="GridMapReplacementRule" format=3 uid="uid://dwna2wsqj1rxo"]
+
+[ext_resource type="Script" uid="uid://d38d0vg6lstvm" path="res://src/levels/gridmap_replacement_rule.gd" id="1_mm2lp"]
+[ext_resource type="PackedScene" uid="uid://cwtotxej8q2u8" path="res://src/gameplay/dynamic_props/terrain_mining/terrain_mining.tscn" id="1_wbu5p"]
+
+[resource]
+script = ExtResource("1_mm2lp")
+target_name = "TerrainMining"
+replacement_scene = ExtResource("1_wbu5p")
+metadata/_custom_type_script = "uid://d38d0vg6lstvm"

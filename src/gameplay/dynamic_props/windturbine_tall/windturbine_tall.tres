@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="GridMapReplacementRule" format=3 uid="uid://cr5dh1bgdjhbe"]
+
+[ext_resource type="Script" uid="uid://d38d0vg6lstvm" path="res://src/levels/gridmap_replacement_rule.gd" id="1_55g3k"]
+[ext_resource type="PackedScene" uid="uid://cbjl3rtnq22cn" path="res://src/gameplay/dynamic_props/windturbine_tall/windturbine_tall.tscn" id="1_nfj23"]
+
+[resource]
+script = ExtResource("1_55g3k")
+target_name = "WindturbineTall"
+replacement_scene = ExtResource("1_nfj23")
+metadata/_custom_type_script = "uid://d38d0vg6lstvm"

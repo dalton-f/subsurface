@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="GridMapReplacementRule" format=3 uid="uid://ccx5qp234sya2"]
+
+[ext_resource type="PackedScene" uid="uid://dyjlgscci8m0n" path="res://src/gameplay/dynamic_props/space_farm_large_sprinkler/space_farm_large_sprinkler.tscn" id="1_d7mmd"]
+[ext_resource type="Script" uid="uid://d38d0vg6lstvm" path="res://src/levels/gridmap_replacement_rule.gd" id="1_rx7r5"]
+
+[resource]
+script = ExtResource("1_rx7r5")
+target_name = "SpaceFarmLargeSprinkler"
+replacement_scene = ExtResource("1_d7mmd")
+metadata/_custom_type_script = "uid://d38d0vg6lstvm"
