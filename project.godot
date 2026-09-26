@@ -34,3 +34,5 @@ enabled=PackedStringArray("res://addons/kaykit_import_helper/plugin.cfg")
 [rendering]
 
 rendering_device/driver.windows="d3d12"
+lights_and_shadows/directional_shadow/size=1024
+anti_aliasing/quality/screen_space_aa=1

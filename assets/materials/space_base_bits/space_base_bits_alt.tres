@@ -2,8 +2,42 @@
 
 [ext_resource type="Texture2D" uid="uid://5vstkd2m10pr" path="res://assets/textures/space_base_bits/spacebits_texture_alt.png" id="1_jabkb"]
 
+[sub_resource type="Gradient" id="Gradient_f7ecr"]
+interpolation_mode = 2
+interpolation_color_space = 1
+offsets = PackedFloat32Array(0.223, 0.24, 0.478, 0.493, 1)
+colors = PackedColorArray(1, 0.9490196, 0.9411765, 1, 0.98039216, 0.93333334, 0.92156863, 1, 1, 0.972549, 0.9607843, 1, 1, 0.98039216, 0.96862745, 1, 1, 1, 1, 1)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_40nm3"]
+noise_type = 2
+frequency = 0.004
+fractal_octaves = 2
+domain_warp_enabled = true
+domain_warp_type = 2
+domain_warp_amplitude = 30.17
+domain_warp_frequency = 0.02
+domain_warp_fractal_octaves = 2
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_ovlo3"]
+width = 1024
+height = 1024
+noise = SubResource("FastNoiseLite_40nm3")
+color_ramp = SubResource("Gradient_f7ecr")
+seamless = true
+
 [resource]
 resource_name = "spacebits_texture"
+transparency = 3
+alpha_hash_scale = 2.0
+alpha_antialiasing_mode = 0
+vertex_color_use_as_albedo = true
 albedo_texture = ExtResource("1_jabkb")
-roughness = 0.6
+metallic_specular = 0.0
+detail_enabled = true
+detail_blend_mode = 3
+detail_uv_layer = 1
+detail_albedo = SubResource("NoiseTexture2D_ovlo3")
+uv2_scale = Vector3(0.2, 0.2, 0.2)
+uv2_triplanar = true
+uv2_world_triplanar = true
 metadata/_gltf_primary_texture_coord = 0
