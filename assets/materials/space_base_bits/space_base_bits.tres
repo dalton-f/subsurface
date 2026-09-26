@@ -6,7 +6,7 @@
 interpolation_mode = 2
 interpolation_color_space = 1
 offsets = PackedFloat32Array(0.223, 0.24, 0.478, 0.493, 1)
-colors = PackedColorArray(0.9999996, 0.9119222, 0.89780927, 1, 0.9714771, 0.9048982, 0.88904005, 1, 1, 0.972549, 0.9607843, 1, 1, 0.98039216, 0.96862745, 1, 1, 1, 1, 1)
+colors = PackedColorArray(0.9999991, 0.87630814, 0.8548173, 1, 0.97681993, 0.9205509, 0.90730894, 1, 1, 0.972549, 0.9607843, 1, 1, 0.98039216, 0.96862745, 1, 1, 1, 1, 1)
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_40nm3"]
 noise_type = 2
