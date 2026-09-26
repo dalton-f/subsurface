@@ -1,4 +1,3 @@
-@tool
 class_name MineManager
 extends Node3D
 
@@ -36,8 +35,7 @@ func _exit_tree() -> void:
 		instance = null
 
 func _ready() -> void:
-	if !Engine.is_editor_hint():
-		for layer in layers:
+	for layer in layers:
 			layer.update_sorted_ores()
 			
 	_generate_top_layer()
@@ -48,10 +46,7 @@ func _generate_top_layer() -> void:
 	
 	# Clear existing blocks inside the mine
 	for child in get_children():
-		if Engine.is_editor_hint():
-			child.free()
-		else:
-			child.queue_free()
+		child.queue_free()
 
 	# Reset the mine data
 	blocks.clear()
