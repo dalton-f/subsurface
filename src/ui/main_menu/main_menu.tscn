@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://du440e724ds6q" path="res://assets/textures/ui/main_menu_background.png" id="1_2hyyg"]
 [ext_resource type="Script" uid="uid://cn18yhbfpnxat" path="res://src/ui/main_menu/main_menu.gd" id="1_4ux21"]
+[ext_resource type="PackedScene" uid="uid://cfkv3hbusmys5" path="res://src/ui/fade_transition/fade_transition.tscn" id="3_osdni"]
 
 [node name="Main" type="Control" unique_id=1098683338]
 layout_mode = 3
@@ -84,3 +85,7 @@ text = "Credits"
 [node name="QuitButton" type="Button" parent="MainMarginContainer/MainVBoxContainer/ButtonsContainer" unique_id=541155664]
 layout_mode = 2
 text = "Quit to Desktop"
+
+[node name="FadeTransition" parent="." unique_id=919062296 instance=ExtResource("3_osdni")]
+visible = false
+layout_mode = 1

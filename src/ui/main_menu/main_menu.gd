@@ -23,7 +23,12 @@ var current_state: MenuState = MenuState.INTRO
 @onready var credits_button: Button = $MainMarginContainer/MainVBoxContainer/ButtonsContainer/CreditsButton
 @onready var quit_button: Button = $MainMarginContainer/MainVBoxContainer/ButtonsContainer/QuitButton
 
+@onready var fade_transition: ColorRect = $FadeTransition
+@onready var fade_transition_animation_player: AnimationPlayer = $FadeTransition/AnimationPlayer
+
 func _ready() -> void:
+	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+	
 	_setup_menu()
 	_connect_buttons()
 	_play_intro()
@@ -96,9 +101,15 @@ func _play_intro() -> void:
 	# Ensure current state gets updated
 	await button_tween.finished
 	current_state = MenuState.MAIN
+	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 
 func _on_play_pressed() -> void:
-	print("Play pressed")
+	fade_transition.visible = true
+	fade_transition_animation_player.play("fade_in")
+	
+	await fade_transition_animation_player.animation_finished
+
+	get_tree().change_scene_to_file("res://src/levels/main/main.tscn")
 
 func _on_settings_pressed() -> void:
 	print("Settings pressed")
@@ -107,4 +118,4 @@ func _on_credits_pressed() -> void:
 	print("Credits pressed")
 
 func _on_quit_pressed() -> void:
-	print("Quit pressed")
+	get_tree().quit()

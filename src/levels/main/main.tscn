@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://cwtoihhqjvq83"]
 
 [ext_resource type="PackedScene" uid="uid://d0yhxha4oqabn" path="res://src/ui/hud/hud.tscn" id="1_e0ova"]
+[ext_resource type="Script" uid="uid://cs4ybqocc00qp" path="res://src/levels/main/main.gd" id="1_fn3y8"]
 [ext_resource type="PackedScene" uid="uid://8ddpxgrbr06r" path="res://src/gameplay/mine/mine_manager/mine_manager.tscn" id="1_ru6p5"]
 [ext_resource type="Environment" uid="uid://qv8polwp0iyj" path="res://assets/world_environments/mars_environment.tres" id="1_vbxdo"]
 [ext_resource type="Script" uid="uid://b8bltevqafkg8" path="res://src/gameplay/mine/layers/layer_data.gd" id="2_8riay"]
@@ -16,6 +17,7 @@
 [ext_resource type="Material" uid="uid://cgv2dbfjjlqk5" path="res://assets/materials/space_base_bits/space_base_bits.tres" id="12_i4h2a"]
 [ext_resource type="Resource" uid="uid://ccx5qp234sya2" path="res://src/gameplay/dynamic_props/space_farm_large_sprinkler/space_farm_large_sprinkler.tres" id="12_t8hnc"]
 [ext_resource type="ArrayMesh" uid="uid://baux8pnav1q" path="res://assets/meshes/detail_rocks.tres" id="15_e0ova"]
+[ext_resource type="PackedScene" uid="uid://cfkv3hbusmys5" path="res://src/ui/fade_transition/fade_transition.tscn" id="18_hhuc2"]
 
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_314lg"]
 dof_blur_far_enabled = true
@@ -60,11 +62,14 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_0fwit")
 
 [node name="Main" type="Node3D" unique_id=1510361917]
+script = ExtResource("1_fn3y8")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1194077728]
-visible = false
+
+[node name="FadeTransition" parent="CanvasLayer" unique_id=919062296 instance=ExtResource("18_hhuc2")]
 
 [node name="Hud" parent="CanvasLayer" unique_id=1441176969 instance=ExtResource("1_e0ova")]
+visible = false
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1411357723]
 environment = ExtResource("1_vbxdo")
