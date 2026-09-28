@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="SUBSURFACE"
-run/main_scene="uid://cwtoihhqjvq83"
+run/main_scene="uid://ddpn5abjgwt1c"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -22,10 +22,15 @@ window/size/viewport_height=1080
 window/size/mode=3
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
+mouse_cursor/custom_image="uid://6m44jfhs4a14"
 
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/kaykit_import_helper/plugin.cfg")
+
+[gui]
+
+theme/custom="uid://ifixb7coc1ex"
 
 [physics]
 

@@ -1,0 +1,63 @@
+[gd_resource type="Theme" format=3 uid="uid://ifixb7coc1ex"]
+
+[ext_resource type="FontFile" uid="uid://nib3lrcevmqo" path="res://assets/fonts/montserrat/montserrat_bold.ttf" id="1_3f3va"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lxams"]
+content_margin_left = 40.0
+content_margin_top = 32.0
+content_margin_right = 40.0
+content_margin_bottom = 32.0
+bg_color = Color(0, 0, 0, 0.5882353)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vhku8"]
+content_margin_left = 40.0
+content_margin_top = 32.0
+content_margin_right = 40.0
+content_margin_bottom = 32.0
+bg_color = Color(0, 0, 0, 0.7058824)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3f3va"]
+content_margin_left = 40.0
+content_margin_top = 32.0
+content_margin_right = 40.0
+content_margin_bottom = 32.0
+bg_color = Color(0, 0, 0, 0.5882353)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ck6d0"]
+content_margin_left = 28.0
+content_margin_top = 28.0
+content_margin_right = 28.0
+content_margin_bottom = 28.0
+bg_color = Color(0, 0, 0, 0.078431375)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6ioqn"]
+
+[resource]
+default_font = ExtResource("1_3f3va")
+default_font_size = 32
+Button/styles/focus = SubResource("StyleBoxFlat_lxams")
+Button/styles/hover = SubResource("StyleBoxFlat_vhku8")
+Button/styles/normal = SubResource("StyleBoxFlat_3f3va")
+MarginContainer/constants/margin_bottom = 32
+MarginContainer/constants/margin_left = 32
+MarginContainer/constants/margin_right = 32
+MarginContainer/constants/margin_top = 32
+PanelContainer/styles/panel = SubResource("StyleBoxFlat_ck6d0")
+VBoxContainer/constants/separation = 18
+VSeparator/styles/separator = SubResource("StyleBoxEmpty_6ioqn")
