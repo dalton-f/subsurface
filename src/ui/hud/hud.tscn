@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://d0yhxha4oqabn"]
+
+[ext_resource type="Texture2D" uid="uid://bwj7sfjvrmavm" path="res://assets/textures/ui/crosshair_c.png" id="1_jobw0"]
+
+[node name="Hud" type="Control" unique_id=1441176969]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=2049226839]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="MarginContainer" unique_id=996253547]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/CenterContainer" unique_id=86222077]
+layout_mode = 2
+texture = ExtResource("1_jobw0")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=617165784]
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="LocationPanelContainer" type="PanelContainer" parent="MarginContainer/HBoxContainer" unique_id=1430582000]
+layout_mode = 2
+
+[node name="LocationContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer/LocationPanelContainer" unique_id=170474947]
+layout_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="ResearchStationLabel" type="Label" parent="MarginContainer/HBoxContainer/LocationPanelContainer/LocationContainer" unique_id=1043013365]
+layout_mode = 2
+text = "ARES-7 RESEARCH STATION"
+uppercase = true
+
+[node name="PlanetLabel" type="Label" parent="MarginContainer/HBoxContainer/LocationPanelContainer/LocationContainer" unique_id=652511165]
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "[ M A R S ]"
+uppercase = true
+
+[node name="ExtractionPanelContainer" type="PanelContainer" parent="MarginContainer/HBoxContainer" unique_id=1669321567]
+layout_mode = 2
+size_flags_horizontal = 10
+
+[node name="ExtractionContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer/ExtractionPanelContainer" unique_id=935615828]
+layout_mode = 2
+
+[node name="ExtractionLabel" type="Label" parent="MarginContainer/HBoxContainer/ExtractionPanelContainer/ExtractionContainer" unique_id=1667002768]
+layout_mode = 2
+text = "EXTRACTION"
+uppercase = true
+
+[node name="TimerLabel" type="Label" parent="MarginContainer/HBoxContainer/ExtractionPanelContainer/ExtractionContainer" unique_id=443328337]
+layout_mode = 2
+text = "[ 0 5 : 3 2 ]"
+horizontal_alignment = 2
+uppercase = true

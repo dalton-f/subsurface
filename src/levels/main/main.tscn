@@ -1,5 +1,6 @@
 [gd_scene format=4 uid="uid://cwtoihhqjvq83"]
 
+[ext_resource type="PackedScene" uid="uid://d0yhxha4oqabn" path="res://src/ui/hud/hud.tscn" id="1_e0ova"]
 [ext_resource type="PackedScene" uid="uid://8ddpxgrbr06r" path="res://src/gameplay/mine/mine_manager/mine_manager.tscn" id="1_ru6p5"]
 [ext_resource type="Environment" uid="uid://qv8polwp0iyj" path="res://assets/world_environments/mars_environment.tres" id="1_vbxdo"]
 [ext_resource type="Script" uid="uid://b8bltevqafkg8" path="res://src/gameplay/mine/layers/layer_data.gd" id="2_8riay"]
@@ -59,6 +60,11 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_0fwit")
 
 [node name="Main" type="Node3D" unique_id=1510361917]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1194077728]
+visible = false
+
+[node name="Hud" parent="CanvasLayer" unique_id=1441176969 instance=ExtResource("1_e0ova")]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1411357723]
 environment = ExtResource("1_vbxdo")
